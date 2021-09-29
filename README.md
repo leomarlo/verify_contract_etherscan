@@ -1,6 +1,6 @@
 # Verify on Etherscan
 
-If you want to verify a deployed contract or library, called **Test**, then you first need to create a single file, say **All.sol**, where the contract itself and all of its dependences are stored. Make sure to place it into the contracts folder and that it compiles (see below). If **Test** is a contract that uses another contract **MotherTest** and another interface **InterTest** and a library **LibTest**, then all of these should be included into **All.sol**. If **Test** is a library, then **All.sol** contains just that library, since libraries cannot inherit anything by construction. The choice of name for the single composite file is arbitrary and you can choose it to your liking.
+If you want to verify a deployed contract or library, called **Test**, then you first need to create a single file, say **All.sol**, where the contract itself and all of its dependences are stored. Make sure to place it into the contracts folder and that it compiles (see below). If **Test** is a contract that uses another contract **MotherTest** and another interface **InterTest** and a library **LibTest**, then all of these should be included into **All.sol**. If **Test** is a library, then **All.sol** contains just that library, since libraries cannot inherit anything by construction. The choice of name for the single composite file is arbitrary and you can choose it to your liking. However, you would then need to adjust the name in the *verification-parameters.json* file (see below).
 
 Then you should initialize the node packages with 
 ```shell
