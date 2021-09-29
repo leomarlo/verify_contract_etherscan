@@ -1,32 +1,30 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.4;
 
-library Libra {
+library Lib {
     struct iteratr {
         uint x;
     }
 
-    function iterate (iteratr storage i) external {
-        i.x = i.x + 1;
+    function iterate (iteratr storage j) external {
+        j.x = j.x + 5;
     }
 }
 
 pragma solidity 0.8.4;
 
 contract Test {
-    using Libra for Libra.iteratr;
-    Libra.iteratr public x;
-    uint y = x.x;
+    using Lib for Lib.iteratr;
+    Lib.iteratr public it;
 
     constructor () {
-        x.iterate();
-        y = x.x;
+        it.iterate();
     }
     
     
     function iterate() external {
-        x.iterate();
-        y = x.x;
+        it.iterate();
     }
+    
     
 }

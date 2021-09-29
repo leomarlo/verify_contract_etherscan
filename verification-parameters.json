@@ -1,0 +1,15 @@
+{
+  "network": "rinkeby",
+  "module": "contract",
+  "address": "0x05264CB9fB20af51Bde3ae71fC1A750e979a7710",
+  "contractName": "Test",
+  "solidityFileName": "All.sol",
+  "compilerversion":"v0.8.4+commit.c7e474f2",
+  "licenseType": "5",
+  "libraries": [
+    {
+      "name": "Lib",
+      "address": "0x230c1d1d9d42Ec542978908e721a5b4780001ab2"
+    }
+  ]
+}

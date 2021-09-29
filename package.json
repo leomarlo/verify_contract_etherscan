@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "verify": "node verify.js",
+    "compile_and_verify": "npx hardhat compile && node verify.js",
+    "compile": "npx hardhat compile"
   },
   "keywords": [],
   "author": "",
